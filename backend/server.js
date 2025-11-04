@@ -22,7 +22,8 @@ if (!fs.existsSync(uploadsDir)) {
 const allowedOrigins = [
   "https://interview-prep-ai-ieb1.onrender.com",
   "https://interview-prep-ai-1-428b.onrender.com",
-  "http://localhost:5173"
+  "http://localhost:5173",
+  "https://ai-interview-question-generator-taupe.vercel.app/"
 ];
 
 // Middleware to handle CORS
@@ -83,7 +84,8 @@ app.use("/uploads", (req, res, next) => {
   if ([
     "https://interview-prep-ai-ieb1.onrender.com",
     "https://interview-prep-ai-1-428b.onrender.com",
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://ai-interview-question-generator-taupe.vercel.app/"
   ].includes(origin)) {
     res.header("Access-Control-Allow-Origin", origin);
   }
