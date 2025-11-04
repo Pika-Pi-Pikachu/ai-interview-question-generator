@@ -23,7 +23,10 @@ const allowedOrigins = [
   "https://interview-prep-ai-ieb1.onrender.com",
   "https://interview-prep-ai-1-428b.onrender.com",
   "http://localhost:5173",
-  "https://ai-interview-question-generator-taupe.vercel.app/"
+  "https://ai-interview-question-generator-taupe.vercel.app/",
+  "https://ai-interview-question-generator-74x.vercel.app/",
+  "https://ai-interview-question-generator-1-npn3.onrender.com",
+  "https://ai-interview-question-generator-9i68.onrender.com"
 ];
 
 // Middleware to handle CORS
@@ -85,7 +88,10 @@ app.use("/uploads", (req, res, next) => {
     "https://interview-prep-ai-ieb1.onrender.com",
     "https://interview-prep-ai-1-428b.onrender.com",
     "http://localhost:5173",
-    "https://ai-interview-question-generator-taupe.vercel.app/"
+    "https://ai-interview-question-generator-taupe.vercel.app/",
+    "https://ai-interview-question-generator-74x.vercel.app/",
+     "https://ai-interview-question-generator-1-npn3.onrender.com",
+     "https://ai-interview-question-generator-9i68.onrender.com"
   ].includes(origin)) {
     res.header("Access-Control-Allow-Origin", origin);
   }
